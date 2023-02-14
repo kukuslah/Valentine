@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just For You anjim 🗿🗿 </title>
+    <link rel="icon" type="image/jpg" href="./assets/favicon.jpg">
+</head>
+    <body style="text-align: center;">
+        <img src="./assets/flower.jpg" alt="img" width="290px">
+        <h1> 
+            <p class="p1">Hai Nasya Cantik!</p>
+        </h1>
+        <h2>
+            <p class="p2">You Have Won My Heart, Be My Girlfriend Would You?</p>
+        </h2>
+    <div>
+        <br>
+        <button id="btn_mau" class="btn" onclick="mau()">YES</button>
+        <button id="btn_gamau" class="btn" onmouseover="gamau(this)" style="position:absolute">NO</button>
+        </br>
+    </div>
+    <style>
+        .p1 {
+            font-family:'Courier New', Courier, monospace
+        }
+        .p2 {
+            font-family:'Courier New', Courier, monospace
+        }
+        .btn {
+            padding: 5px 7px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    </style>
+        <br>
+        <br>
+            <audio controls loop autoplay id="myaudio">
+                <source src="./song/Rose.mp3" type="audio/ogg">
+            </audio>
+        </br>
+        </br>
+    </body>
+        <script>
+            var audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
+
+            function mau(){
+	            alert("yakin pilih yes");
+      	        alert("AWKAWKAOWAKOWAKOW");
+	            alert("Wait, one more.");
+
+	        location.assign("./ValentineWish-main/index.html");
+	        }
+            function gamau(id){
+                var mau = document.getElementById("btn_mau");
+                var i = Math.floor(Math.random() * 300 ) + 100;
+                var j = Math.floor(Math.random() * 100 ) + mau.offsetTop;
+                id.style.left = i + "px";
+                id.style.top = j + "px";
+            }
+        </script>
+</html>
